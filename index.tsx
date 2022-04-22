@@ -5,7 +5,9 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-ReactGA.initialize('G-P5P58SYRN7');
+const TRACKING_ID = "G-P5P58SYRN7"
+
+ReactGA.initialize(TRACKING_ID);
 ReactGA.send('pageview');
 
 interface AppProps {}
